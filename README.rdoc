@@ -1,28 +1,24 @@
-== README
+== Sequence
+Consultants use Sequence to build re-usable software implementation patterns. These patterns can be applied to many clients with similar needs. Through use of quantifiable implementation data, best practice techniques can be established that will ensure customer success.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Over time Sequence allows for the creation of a client-led implementation model for SaaS platforms that have historically required significant consultant interaction. This allows resource constrained software companies to onboard more clients simultaneously and offer more competitive pricing.
 
-Things you may want to cover:
+== Core Features
+- Consultant "mission control" view for management of all ongoing implementation activity
+- Institute a client-led, consultant-led, or shared implementation model
+- Continuously refine patterns based on quantifiable implementation data
+- Track progress at client, project, and pattern levels
 
-* Ruby version
+== Technology Used
+- Rails back-end serving JSON
+- React front-end for rendering components
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+== Roadmap
+- Chat feature to allow instant access to a consultant in a client-led implementation model
+- Predictive analytics to identify pattern improvement opportunities and proactive suggestions for consultant intervention
+- Translation of user input/uploaded static data to the templates required by each SaaS platform
+- Interface to time tracking and billing applications
+- Realtime schedule display so clients can be made aware of consultant availabilty, peak-time, and low-time
+- Client sign-off on each step of the project
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
