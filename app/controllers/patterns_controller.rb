@@ -1,8 +1,8 @@
 class PatternsController < ApplicationController
 
   def index
-    @patterns = Pattern.all
-    respond_with(@patterns)
+    patterns = Pattern.all
+    render json: patterns
   end
 
   def new
