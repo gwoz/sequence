@@ -1,6 +1,11 @@
 var CompanyBox = React.createClass({
-
   render: function() {
-    return <div />;
+    return(
+      <ul>
+      {this.props.companies.map(function(company, i) {
+          return <Company key={i} data={company}/>;
+      })}
+      </ul>
+    );
   }
 });
