@@ -28,7 +28,7 @@ class PatternsController < ApplicationController
   private
 
   def pattern_params
-    params.require(:pattern).permit(:description, :company_id)
+    params.require(:pattern).permit(:name, :description, :company_id)
   end
 
 end
