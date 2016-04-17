@@ -1,7 +1,5 @@
 class CompaniesController < ApplicationController
 
-  respond_to :html, :json
-
   def index
     @companies = Company.all
     respond_with(@companies)
@@ -20,6 +18,8 @@ class CompaniesController < ApplicationController
       render :new
     end
   end
+
+  private
 
   def company_params
     params.require(:company).permit(:name)

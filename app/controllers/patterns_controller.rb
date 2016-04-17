@@ -1,7 +1,5 @@
 class PatternsController < ApplicationController
 
-  respond_to :html, :json
-
   def index
     @patterns = Pattern.all
     respond_with(@patterns)
