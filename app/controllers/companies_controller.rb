@@ -1,7 +1,5 @@
 class CompaniesController < ApplicationController
 
-  respond_to :html, :json
-
   def index
     @companies = Company.all
     respond_with(@companies)
@@ -9,6 +7,7 @@ class CompaniesController < ApplicationController
 
   def new
     @company = Company.new()
+    respond_with(@company)
   end
 
   def create
@@ -19,6 +18,14 @@ class CompaniesController < ApplicationController
       render :new
     end
   end
+
+  def show
+    @company = Company.find(params[:id])
+    respond_with(@company)
+  end
+
+
+  private
 
   def company_params
     params.require(:company).permit(:name)
