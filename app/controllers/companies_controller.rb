@@ -9,6 +9,7 @@ class CompaniesController < ApplicationController
 
   def new
     @company = Company.new()
+    respond_with(@company)
   end
 
   def create
