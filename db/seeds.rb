@@ -21,7 +21,7 @@ Client.create(name: "Planetary Corp")
 Client.create(name: "Interstellar Corp")
 Client.create(name: "Galaxy Corp")
 
-clients = [1..8]
-patterns = [1..3]
+clients = (1..8).to_a
+patterns = (1..3).to_a
 
 20.times { |pattern| Project.create(company_id: 1, client_id: clients.sample, pattern_id: patterns.sample) }
