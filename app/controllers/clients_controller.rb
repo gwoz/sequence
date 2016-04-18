@@ -1,8 +1,8 @@
 class ClientsController < ApplicationController
 
   def index
-    @clients = Client.all
-    respond_with(@clients)
+    clients = Client.all
+    render json: clients
   end
 
   def new

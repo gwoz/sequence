@@ -1,8 +1,8 @@
 class CompaniesController < ApplicationController
 
   def index
-    @companies = Company.all
-    respond_with(@companies)
+    companies = Company.all
+    render json: companies
   end
 
   def new
