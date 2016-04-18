@@ -39,6 +39,7 @@ var App = React.createClass({
           <div>
             <h1>Patterns</h1>
           </div>
+            <patternForm />
             <PatternBox patterns={patterns}/>
         </section>
       </div>
