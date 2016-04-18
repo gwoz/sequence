@@ -1,13 +1,10 @@
 var Client = React.createClass({
-  propTypes: {
-    name: React.PropTypes.string
-  },
-
   render: function() {
-    return (
-      <div>
-        <div>Name: {this.props.name}</div>
-      </div>
+    var data = this.props.data;
+    return(
+      <section id='client-content'>
+        <li>{data.name}</li>
+      </section>
     );
   }
 });
