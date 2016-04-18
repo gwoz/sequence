@@ -28,6 +28,7 @@ var App = React.createClass({
     var patterns = this.state.patterns
     return (
       <div>
+        <NavBox />
         <section id='clients-container'>
           <div>
             <h1>Clients</h1>
