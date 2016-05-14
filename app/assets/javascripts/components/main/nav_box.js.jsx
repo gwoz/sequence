@@ -4,11 +4,10 @@ var NavBox = React.createClass({
       <nav>
         <h1>Sequence</h1>
         <ul>
-          <li>Clients</li>
-          <li>Patterns</li>
-          <li>Projects</li>
           <li>Company</li>
-          <li>Logout</li>
+          <li>Patterns</li>
+          <li>Clients</li>
+          <li>Projects</li>
         </ul>
       </nav>
     );
