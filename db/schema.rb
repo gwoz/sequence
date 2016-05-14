@@ -32,11 +32,11 @@ ActiveRecord::Schema.define(version: 20160417120107) do
     t.string   "name"
     t.string   "description"
     t.integer  "company_id"
+    t.integer  "parent_id"
+    t.integer  "child_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
-
-  add_index "patterns", ["company_id"], name: "index_patterns_on_company_id", using: :btree
 
   create_table "projects", force: :cascade do |t|
     t.integer  "company_id"
@@ -50,7 +50,6 @@ ActiveRecord::Schema.define(version: 20160417120107) do
   add_index "projects", ["company_id"], name: "index_projects_on_company_id", using: :btree
   add_index "projects", ["pattern_id"], name: "index_projects_on_pattern_id", using: :btree
 
-  add_foreign_key "patterns", "companies"
   add_foreign_key "projects", "clients"
   add_foreign_key "projects", "companies"
   add_foreign_key "projects", "patterns"

@@ -3,7 +3,9 @@ class CreatePatterns < ActiveRecord::Migration
     create_table :patterns do |t|
       t.string :name
       t.string :description
-      t.references :company, index: true, foreign_key: true
+      t.references :company
+      t.references :parent
+      t.references :child
 
       t.timestamps null: false
     end
