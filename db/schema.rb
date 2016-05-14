@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160417120107) do
   create_table "patterns", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
+    t.integer  "order"
     t.integer  "company_id"
     t.integer  "parent_id"
     t.integer  "child_id"

@@ -3,10 +3,26 @@
 puts "Added software companies"
 
 # Create software company patterns
-	Pattern.create(name: "Create Users", description: "Input or upload all user names and emails. When done, submit and each user will be emailed a new user ID and temporary password. They should log-in within 24 hours or their password will need to be reset.", company_id: 1)
-	Pattern.create(name: "Collect entity static data", description: "Input or upload static data for each of your entities. This will include the legal entity name, a 10 character nickname, and physical address details", company_id: 1)
-	Pattern.create(name: "Schedule Training", description: "Select a one hour time slot for your 101 training session", company_id: 1)
+	Pattern.create(name: "Kickoff", 
+								 description: "Create users, collect static data, scheulde training",
+								 company_id: 1)
+	Pattern.create(name: "Create users", 
+								 description: "Input or upload all user names and emails. When done, submit and each user will be emailed a new user ID and temporary password. They should log-in within 24 hours or their password will need to be reset.", 
+								 company_id: 1,
+								 order: 1,
+								 parent_id: 1)
+	Pattern.create(name: "Collect client static data", 
+								 description: "Input or upload static data for each of your entities. This will include the legal entity name, a 10 character nickname, and physical address details",
+								 company_id: 1,
+								 order: 2,
+								 parent_id: 1)
+	Pattern.create(name: "Schedule training", 
+								 description: "Select a one hour time slot for your 101 training session", 
+								 company_id: 1,
+								 order: 3,
+								 parent_id: 1)
 puts "Added software company patterns"
+
 
 # Create software company clients
 	Client.create(name: "NYC Corp")

@@ -3,6 +3,7 @@ class CreatePatterns < ActiveRecord::Migration
     create_table :patterns do |t|
       t.string :name
       t.string :description
+      t.integer :order
       t.references :company
       t.references :parent
       t.references :child
