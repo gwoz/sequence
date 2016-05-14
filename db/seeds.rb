@@ -39,6 +39,8 @@ puts "Added software company clients"
 	clients = (1..8).to_a
 	patterns = (1..3).to_a
 	20.times do |pattern|
-		Project.create(company_id: 1, client_id: clients.sample, pattern_id: patterns.sample)
+		Project.create(company_id: 1, 
+									 client_id: clients.sample, 
+									 pattern_id: patterns.sample)
 	end
 puts "Added software company projects"
