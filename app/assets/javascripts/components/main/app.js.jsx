@@ -34,6 +34,7 @@ var App = React.createClass({
           </div>
             <ClientBox clients={clients}/>
         </section>
+        <PatternForm />
         <section id='patterns-container'>
           <div>
             <h1>Patterns</h1>
