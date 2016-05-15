@@ -6,17 +6,11 @@ class PatternsController < ApplicationController
   end
 
   def new
-    @pattern = Pattern.new()
-    respond_with(@pattern)
   end
 
   def create
-    @pattern = Pattern.new(pattern_params)
-    if @pattern.save
-      redirect_to patterns_path
-    else
-      render :new
-    end
+    @pattern = Pattern.create(pattern_params)
+    render json: @pattern
   end
 
   def show
