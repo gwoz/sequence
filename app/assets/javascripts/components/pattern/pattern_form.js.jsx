@@ -19,13 +19,11 @@ var PatternForm = React.createClass({
           <label for="name">Name</label>
           <input type='text' 
                  ref='patternName'
-                 id='patternName' 
                  name='name'>
           </input>
           <label for="description">Description</label>
           <input type='text' 
                  ref='patternDescription'
-                 id='patternDescription'
                  name='description'>
           </input>
           <input type='submit' value='Submit'></input>
