@@ -37,9 +37,10 @@ var App = React.createClass({
         <PatternForm />
         <section id='patterns-container'>
           <div>
-            <h1>Patterns</h1>
+            <h1>Existing Patterns</h1>
           </div>
             <patternForm />
+            <patternCombo />
             <PatternBox patterns={patterns}/>
         </section>
       </div>
